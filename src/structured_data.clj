@@ -15,7 +15,8 @@
 )
 
 (defn spiff-destructuring [v]
-  :-)
+    (+ (first v) (nth v 2))
+)
 
 (defn point [x y]
   [x y])
