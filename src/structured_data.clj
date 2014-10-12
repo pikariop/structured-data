@@ -38,7 +38,8 @@
 
 
 (defn area [rectangle]
-  :-)
+  (let [[[x1 y1] [x2 y2]] rectangle]
+    (* (- x2 x1) (- y2 y1) )))
 
 (defn contains-point? [rectangle point]
   :-)
