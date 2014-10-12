@@ -52,7 +52,7 @@
       (and (<= oy1 iy1 iy2 oy2) (<= oy1 iy1 iy2 oy2) ))))
 
 (defn title-length [book]
-  :-)
+  (count (:title book)))
 
 (defn author-count [book]
   :-)
