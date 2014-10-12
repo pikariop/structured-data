@@ -42,7 +42,9 @@
     (* (- x2 x1) (- y2 y1) )))
 
 (defn contains-point? [rectangle point]
-  :-)
+  (let [[[x1 y1] [x2 y2]] rectangle]
+    (let [[x y] point]
+      (and (<= x1 x x2) (<= y1 y y2) ))))
 
 (defn contains-rectangle? [outer inner]
   :-)
