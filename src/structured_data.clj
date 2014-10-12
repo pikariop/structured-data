@@ -47,7 +47,9 @@
       (and (<= x1 x x2) (<= y1 y y2) ))))
 
 (defn contains-rectangle? [outer inner]
-  :-)
+  (let [[[ox1 oy1] [ox2 oy2]] outer]
+    (let [[[ix1 iy1] [ix2 iy2]] inner]
+      (and (<= oy1 iy1 iy2 oy2) (<= oy1 iy1 iy2 oy2) ))))
 
 (defn title-length [book]
   :-)
