@@ -72,7 +72,8 @@
 
 
 (defn second-elements [collection]
-  :-)
+  (let [get-sec (fn [v] (get v 1))]
+    (map get-sec collection)))
 
 (defn titles [books]
   :-)
