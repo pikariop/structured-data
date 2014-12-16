@@ -68,7 +68,8 @@
   (not (contains? author :death-year)))
 
 (defn element-lengths [collection]
-  :-)
+  (map count collection))
+
 
 (defn second-elements [collection]
   :-)
