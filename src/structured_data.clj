@@ -111,7 +111,7 @@
   (clojure.set/union (set (apply concat (map get-author books))))))
 
 (defn all-author-names [books]
-  :-)
+  (set (map :name (authors books))))
 
 (defn author->string [author]
   :-)
