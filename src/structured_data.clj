@@ -130,7 +130,14 @@
        (authors->string (:authors book))))
 
 (defn books->string [books]
-  :-)
+  (if (< 0 (count books))
+    (str
+      (count books)
+      " book"
+      (if (< 1 (count books)) "s. " ". ")
+      (apply str (interpose ". " (map book->string books)))
+      ".")
+    "No books."))
 
 (defn books-by-author [author books]
   :-)
